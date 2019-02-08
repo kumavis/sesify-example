@@ -1,15 +1,24 @@
-This is an example app using Sesify based on https://github.com/mattdesl/browserify-example
+This is an example app using Sesify.
 
 ### status
 this example is not ready.
-this is not currently a good example because of the prototype.toString restriction encountered by the `tone` dependency
+this is not currently a good example because autogen does not work on dependencies that are specified via overrides in the browser field.
 
 ### setup
 autogenerate the config, then run
 
+start
 ```
 npm install
 npm link sesify
-npm run sesify-config
-npm start
 ```
+
+try these two modes. watch the DOM and browser console for feedback.
+```
+npm start
+npm start-unsafe
+```
+
+### credit
+
+This repo started as a fork of https://github.com/mattdesl/browserify-example
