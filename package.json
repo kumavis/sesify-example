@@ -13,12 +13,13 @@
     "tone": "^0.6.0"
   },
   "devDependencies": {
-    "browserify": "^14.5.0",
+    "browserify": "^16.2.3",
     "budo": "^10.0.4",
     "uglify-js": "^3.3.4"
   },
   "scripts": {
-    "start": "budo index.js:bundle.js --live",
+    "start": "budo index.js:bundle.js --live -- -p [ sesify --config ./sesify-config.js ]",
+    "sesify-config": "browserify index.js -p [ sesify --writeAutoConfig ./sesify-config.js ] | echo 'config autogen complete'",
     "build": "browserify index.js | uglifyjs -m -c warnings=false > bundle.js"
   },
   "keywords": [
