@@ -19,6 +19,8 @@ npm start
 npm start-unsafe
 ```
 
+see `sesify-config.js` to see how the endowments are specified 
+
 ### credit
 
 This repo started as a fork of https://github.com/mattdesl/browserify-example
