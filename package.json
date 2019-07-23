@@ -14,7 +14,8 @@
     "foe": "./src/foe.js"
   },
   "dependencies": {
-    "sesify": "^2.0.0"
+    "sesify": "^2.0.0",
+    "sesify-example-format": "^1.0.0"
   },
   "devDependencies": {
     "browserify": "^16.2.3",
