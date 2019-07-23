@@ -15,7 +15,7 @@ npm install
 try these two modes. watch the DOM and browser console for feedback.
 ```
 npm start
-npm start-unsafe
+npm run dev-unsafe
 ```
 
 see `sesify-config.json` to see how the endowments are specified 

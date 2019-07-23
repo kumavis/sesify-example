@@ -22,8 +22,9 @@
     "uglify-js": "^3.3.4"
   },
   "scripts": {
-    "start": "budo index.js:bundle.js --live -- -p [ sesify --config ./sesify-config.json ]",
-    "start-unsafe": "budo index.js:bundle.js --live",
+    "start": "npm run dev-safe",
+    "dev-safe": "budo index.js:bundle.js --live -- -p [ sesify --config ./sesify-config.json ]",
+    "dev-unsafe": "budo index.js:bundle.js --live",
     "sesify-config": "browserify index.js -p [ sesify --writeAutoConfig ./sesify-config.json ] | echo 'config autogen complete'",
     "build": "browserify index.js | uglifyjs -m -c warnings=false > bundle.js"
   },
