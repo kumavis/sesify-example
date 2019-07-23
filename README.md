@@ -10,7 +10,6 @@ autogenerate the config, then run
 start
 ```
 npm install
-npm link sesify
 ```
 
 try these two modes. watch the DOM and browser console for feedback.
