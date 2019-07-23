@@ -15,6 +15,7 @@
   },
   "dependencies": {
     "sesify": "^2.0.0",
+    "sesify-example-deep": "^1.0.1",
     "sesify-example-format": "^1.0.0"
   },
   "devDependencies": {
@@ -28,6 +29,7 @@
     "start": "npm run dev-safe",
     "dev-safe": "budo index.js:bundle.js --live -- -p [ sesify --config ./sesify-config.json ]",
     "dev-unsafe": "budo index.js:bundle.js --live",
+    "viz": "npm run viz:dump-deps && npm run viz:build",
     "viz:dump-deps": "browserify -p [ sesify --config ./sesify-config.json ] -p [ deps-dump --filename ./deps.json ] index.js > /dev/null",
     "viz:build": "sesify-viz --config ./sesify-config.json --deps ./deps.json > viz.html",
     "sesify-config": "browserify index.js -p [ sesify --writeAutoConfig ./sesify-config.json ] | echo 'config autogen complete'",

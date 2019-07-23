@@ -2,9 +2,11 @@
 const foe = require('foe')
 const friend = require('friend')
 const format = require('sesify-example-format')
+const deep = require('sesify-example-deep')
 
 
-// document.body.innerHTML += format('hello')
+console.log(format('hello'))
+console.log(deep('hi there'))
 
 
 // run their code
