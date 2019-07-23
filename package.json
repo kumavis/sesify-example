@@ -19,12 +19,16 @@
   "devDependencies": {
     "browserify": "^16.2.3",
     "budo": "^11.6.1",
+    "deps-dump": "^1.0.0",
+    "sesify-viz": "^1.0.0",
     "uglify-js": "^3.3.4"
   },
   "scripts": {
     "start": "npm run dev-safe",
     "dev-safe": "budo index.js:bundle.js --live -- -p [ sesify --config ./sesify-config.json ]",
     "dev-unsafe": "budo index.js:bundle.js --live",
+    "viz:dump-deps": "browserify -p [ sesify --config ./sesify-config.json ] -p [ deps-dump --filename ./deps.json ] index.js > /dev/null",
+    "viz:build": "sesify-viz --config ./sesify-config.json --deps ./deps.json > viz.html",
     "sesify-config": "browserify index.js -p [ sesify --writeAutoConfig ./sesify-config.json ] | echo 'config autogen complete'",
     "build": "browserify index.js | uglifyjs -m -c warnings=false > bundle.js"
   },
