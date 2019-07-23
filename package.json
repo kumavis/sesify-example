@@ -13,16 +13,18 @@
     "friend": "./src/friend.js",
     "foe": "./src/foe.js"
   },
-  "dependencies": {},
+  "dependencies": {
+    "sesify": "^2.0.0"
+  },
   "devDependencies": {
     "browserify": "^16.2.3",
     "budo": "^11.6.1",
     "uglify-js": "^3.3.4"
   },
   "scripts": {
-    "start": "budo index.js:bundle.js --live -- -p [ sesify --config ./sesify-config.js ]",
+    "start": "budo index.js:bundle.js --live -- -p [ sesify --config ./sesify-config.json ]",
     "start-unsafe": "budo index.js:bundle.js --live",
-    "sesify-config": "browserify index.js -p [ sesify --writeAutoConfig ./sesify-config.js ] | echo 'config autogen complete'",
+    "sesify-config": "browserify index.js -p [ sesify --writeAutoConfig ./sesify-config.json ] | echo 'config autogen complete'",
     "build": "browserify index.js | uglifyjs -m -c warnings=false > bundle.js"
   },
   "keywords": [

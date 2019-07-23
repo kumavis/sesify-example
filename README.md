@@ -19,7 +19,7 @@ npm start
 npm start-unsafe
 ```
 
-see `sesify-config.js` to see how the endowments are specified 
+see `sesify-config.json` to see how the endowments are specified 
 
 ### credit
 
