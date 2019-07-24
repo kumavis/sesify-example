@@ -7,12 +7,9 @@
       }
     },
     "sesify-example-deep": {
-      "globals": {
-        "console.warn": true,
-        "localStorage": true
-      },
       "modules": {
-        "sesify-example-fetch": true
+        "sesify-example-fetch": true,
+        "sesify-example-localstorage": true
       }
     },
     "sesify-example-fetch": {
@@ -24,6 +21,11 @@
       "globals": {
         "console.warn": true,
         "fetch": true,
+        "localStorage": true
+      }
+    },
+    "sesify-example-localstorage": {
+      "globals": {
         "localStorage": true
       }
     }

@@ -15,14 +15,14 @@
   },
   "dependencies": {
     "sesify": "^2.0.0",
-    "sesify-example-deep": "^1.0.2",
+    "sesify-example-deep": "^1.0.4",
     "sesify-example-format": "^1.0.0"
   },
   "devDependencies": {
     "browserify": "^16.2.3",
     "budo": "^11.6.1",
     "deps-dump": "^1.0.0",
-    "sesify-viz": "^1.0.0",
+    "sesify-viz": "^2.0.1",
     "uglify-js": "^3.3.4"
   },
   "scripts": {
