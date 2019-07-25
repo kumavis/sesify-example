@@ -5,7 +5,8 @@
       "modules": {
         "sesify-example-banner": true,
         "sesify-example-deep": true,
-        "sesify-example-format": true
+        "sesify-example-format": true,
+        "sesify-example-rainbow": true
       }
     },
     "sesify-example-deep": {
@@ -30,6 +31,11 @@
       "globals": {
         "localStorage": true
       }
+    },
+    "sesify-example-rainbow": {
+      "modules": {
+        "sesify-example-banner": true
+      }
     }
   }
 };
@@ -38,7 +44,8 @@
     "deps": {
       "sesify-example-banner": 2,
       "sesify-example-deep": 3,
-      "sesify-example-format": 5
+      "sesify-example-format": 5,
+      "sesify-example-rainbow": 7
     },
     "entry": true,
     "expose": false,
@@ -48,7 +55,8 @@
     "indexDeps": {
       "sesify-example-banner": 2,
       "sesify-example-deep": 3,
-      "sesify-example-format": 5
+      "sesify-example-format": 5,
+      "sesify-example-rainbow": 7
     },
     "order": 0,
     "package": "<root>"
@@ -106,6 +114,18 @@
     "indexDeps": {
     },
     "package": "sesify-example-localstorage"
+  },
+  "7": {
+    "deps": {
+      "sesify-example-banner": 2
+    },
+    "file": "/home/xyz/Development/sesify-example/node_modules/sesify-example-rainbow/index.js",
+    "id": 7,
+    "index": 7,
+    "indexDeps": {
+      "sesify-example-banner": 2
+    },
+    "package": "sesify-example-rainbow"
   }
 };
   
