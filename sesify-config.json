@@ -2,6 +2,7 @@
   "resources": {
     "<root>": {
       "modules": {
+        "sesify-example-banner": true,
         "sesify-example-deep": true,
         "sesify-example-format": true
       }

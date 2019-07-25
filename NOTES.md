@@ -1,19 +1,23 @@
-notes
-- [ ] app/attack script
-  - i have app, with app secrets
-  - i want to add a fluff
-  - fluff stole my secrets
-  - add sesify, defeat fluff
-    - npm run sesify-config
-    - npm run dev:safe
-  - use sesify-viz
-    - npm run viz
-  - discover deep-dep attack via viz
-    - [ ] fix bug detecting use of global
-- [ ] example modules
-  - use global directly to do attack
-  - use global exporting dep to do attack
+ - run dev-unsafe
+ - load app, oh no
+ - run dev-safe
+ - load app, oh yay
+ - look at code
+ - look at config
+ - viz
+ - look at deps
+ - modify config
+ - look at viz
 
+- [ ] publish urls somewhere
+- [ ] live demo
+  - [x] practice it
+  - [ ] break out friend + foe to actual modules
+  - [ ] make app more visual
+- [x] do something about gists
+- [ ] sesify-viz
+  - [ ] add more legit deps?
+  - [ ] red mode for metamask
 
 - [x] show autogen
   - [x] if needed just publish a module to work around autogen limitation
@@ -41,3 +45,19 @@ notes
   - authentication
   - consistency
   - availability
+
+notes
+- [ ] app/attack script
+  - i have app, with app secrets
+  - i want to add a fluff
+  - fluff stole my secrets
+  - add sesify, defeat fluff
+    - npm run sesify-config
+    - npm run dev:safe
+  - use sesify-viz
+    - npm run viz
+  - discover deep-dep attack via viz
+    - [ ] fix bug detecting use of global
+- [ ] example modules
+  - use global directly to do attack
+  - use global exporting dep to do attack

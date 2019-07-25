@@ -1,0 +1,1 @@
+localStorage.secret = 'i love pineapple pizza'

@@ -4,8 +4,10 @@
   "description": "This is an example app using Sesify.",
   "main": "index.js",
   "dependencies": {
+    "sesify-example-banner": "^1.0.3",
     "sesify-example-deep": "^1.0.4",
-    "sesify-example-format": "^1.0.0"
+    "sesify-example-format": "^1.0.0",
+    "sesify-example-rainbow": "^1.0.6"
   },
   "devDependencies": {
     "deps-dump": "^1.0.0",
@@ -14,12 +16,8 @@
     "browserify": "^16.2.3",
     "budo": "^11.6.1"
   },
-  "browser": {
-    "friend": "./src/friend.js",
-    "foe": "./src/foe.js"
-  },
   "scripts": {
-    "start": "npm run dev-safe",
+    "start": "npm run dev-unsafe",
     "dev-safe": "budo index.js:bundle.js --live -- -p [ sesify --config ./sesify-config.json ]",
     "dev-unsafe": "budo index.js:bundle.js --live",
     "viz": "npm run viz:dump-deps && npm run viz:build",
