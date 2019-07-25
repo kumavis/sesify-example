@@ -1,29 +1,22 @@
 {
-  "name": "browserify-example",
+  "name": "sesify-example",
   "version": "1.0.0",
-  "description": "example with browserify + npm",
+  "description": "This is an example app using Sesify.",
   "main": "index.js",
-  "license": "MIT",
-  "author": {
-    "name": "Matt DesLauriers",
-    "email": "dave.des@gmail.com",
-    "url": "https://github.com/mattdesl"
-  },
-  "browser": {
-    "friend": "./src/friend.js",
-    "foe": "./src/foe.js"
-  },
   "dependencies": {
-    "sesify": "^2.0.0",
     "sesify-example-deep": "^1.0.4",
     "sesify-example-format": "^1.0.0"
   },
   "devDependencies": {
-    "browserify": "^16.2.3",
-    "budo": "^11.6.1",
     "deps-dump": "^1.0.0",
+    "sesify": "^2.0.0",
     "sesify-viz": "^2.0.1",
-    "uglify-js": "^3.3.4"
+    "browserify": "^16.2.3",
+    "budo": "^11.6.1"
+  },
+  "browser": {
+    "friend": "./src/friend.js",
+    "foe": "./src/foe.js"
   },
   "scripts": {
     "start": "npm run dev-safe",
@@ -35,20 +28,14 @@
     "sesify-config": "browserify index.js -p [ sesify --writeAutoConfig ./sesify-config.json ] | echo 'config autogen complete'",
     "build": "browserify index.js | uglifyjs -m -c warnings=false > bundle.js"
   },
-  "keywords": [
-    "budo",
-    "browserify",
-    "example",
-    "help",
-    "tutorial",
-    "npm"
-  ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/mattdesl/browserify-example.git"
+    "url": "git+https://github.com/kumavis/sesify-example.git"
   },
-  "homepage": "https://github.com/mattdesl/browserify-example",
+  "author": "",
+  "license": "ISC",
   "bugs": {
-    "url": "https://github.com/mattdesl/browserify-example/issues"
-  }
+    "url": "https://github.com/kumavis/sesify-example/issues"
+  },
+  "homepage": "https://github.com/kumavis/sesify-example#readme"
 }
